@@ -23,9 +23,9 @@ jobs:
     - name: Install dependencies
       run: |
         pip install python-dotenv
-    - name: Print Environment Variables
-      run: |
-        printenv
+    # - name: Print Environment Variables
+    #   run: |
+    #     printenv
     - name: Print Email from env
       run: |
         python3 temp.py

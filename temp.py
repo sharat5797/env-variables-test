@@ -1,5 +1,14 @@
-# temp.py
+# get_email.py
 import os
+from dotenv import load_dotenv
 
-email = os.getenv("EMAIL", "default_value_if_not_set")
-print(f"Email from env: {email}")
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the email variable
+email = os.getenv("EMAIL")
+
+if email:
+    print(f"Email from .env: {email}")
+else:
+    print("Email not found in .env")
