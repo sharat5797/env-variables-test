@@ -12,3 +12,4 @@ if email:
     print(f"Email from .env: {email}")
 else:
     print("Email not found in .env")
+print(os.getenv("EMAIL"))
