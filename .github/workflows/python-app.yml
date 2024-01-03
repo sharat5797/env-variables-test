@@ -23,9 +23,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install python-dotenv
-    # - name: Print Environment Variables
-    #   run: |
-    #     printenv
     - name: Print Email from env
       run: |
-        python3 temp.py
+        python3 -c 'import os; print(f"Email from env: {os.getenv(\"EMAIL\")}")'
