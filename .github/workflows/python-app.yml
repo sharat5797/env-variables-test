@@ -24,5 +24,5 @@ jobs:
       run: |
         pip install python-dotenv
     - name: Print Email from env
-      run: |
-        python3 -c 'import os; print(f"Email from env: {os.getenv(\"EMAIL\")}")'
+      run: python3 -c 'import os; print("Email from env:", os.getenv("EMAIL"))'
+      
